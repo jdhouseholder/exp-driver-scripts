@@ -1,0 +1,18 @@
+[project]
+name = "mpt-pir-py"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "xxhash>=3.6.0",
+    "simple-pirate",
+    "simple-flotilla",
+    "rlp>=4.1.0",
+    "eth-utils>=5.3.1",
+    "pycryptodome>=3.23.0",
+]
+
+[tool.uv.sources]
+simple-pirate = { path = "../simple-pirate", editable = true }
+simple-flotilla = { path = "../simple-flotilla", editable = true }
